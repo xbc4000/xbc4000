@@ -19,9 +19,9 @@
 
 ---
 
-Founder of **TechX Maestro**, building the **HCC** (Homelab Command Center) product line — a unified operations platform for self-hosted infrastructure. Full-stack engineer with deep experience across networking, Linux systems, observability, and AI integration.
+Owner of **[TechX Maestro](https://techxmaestro.com)** — Owen Sound's tech professional. IT management, custom development, infrastructure, security, and design for small businesses and homes that deserve real engineering.
 
-Current focus: production-grade tooling that treats a homelab like a real data center, plus client work across web, mobile, and infrastructure.
+This profile is the portfolio. Everything public here runs in production against a full enterprise homelab — proof of the depth behind the service. The **HCC** (Homelab Command Center) product line below is the flagship: a unified operations platform for self-hosted infrastructure, built and hardened in-house.
 
 ## Product line — HCC Ecosystem
 
@@ -69,10 +69,14 @@ Every project in this profile runs in this environment, twenty-four hours a day.
 
 ## Contact
 
-Open to client work: full-stack web, mobile, infrastructure, observability, AI integration, homelab consulting.
+Serving Owen Sound and surrounding area — on-site, remote, and hybrid. Also open to remote client work globally for web, mobile, and infrastructure projects.
 
-- GitHub · [@xbc4000](https://github.com/xbc4000)
-- Email · available on request
+- 🌐 **[techxmaestro.com](https://techxmaestro.com)** — services, pricing, contact
+- 📍 Owen Sound, ON · Canada
+- 💼 IT Management · Development · Design · Security · Training · Consulting
+- 🏠 Custom homes, smart integration, private hosting, and backup
+
+Get in touch through [techxmaestro.com](https://techxmaestro.com) for a quote.
 
 ---
 
