@@ -6,83 +6,109 @@
 ║     ▀▄▀ ██▄ ▄▀▀   █▄▀ █▄█ █▀█ ▄▀▀                            ║
 ║     ▀▄▀ █▄█ ▀▄▄   █ ▀ █ █ █▀▄ ▄▄▀                            ║
 ║                                                              ║
-║      full-stack engineer · infrastructure · AI ops           ║
+║              cyberpunk homelab operator                      ║
+║         keeper of a British AI & her pet frog 🐸             ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
-[![TechX Maestro](https://img.shields.io/badge/TechX_Maestro-FF00B2?style=for-the-badge&labelColor=000000)](https://github.com/xbc4000)
-[![HCC Ecosystem](https://img.shields.io/badge/HCC_Ecosystem-00d4ff?style=for-the-badge&labelColor=000000)](https://github.com/xbc4000?tab=repositories)
-[![Infrastructure](https://img.shields.io/badge/Infrastructure-00ff88?style=for-the-badge&labelColor=000000)]()
+[![Cyan](https://img.shields.io/badge/-%2300B7FF?style=for-the-badge&labelColor=000000)](#)
+[![Violet](https://img.shields.io/badge/-%23B986F2?style=for-the-badge&labelColor=000000)](#)
+[![Magenta](https://img.shields.io/badge/-%23FF00B2?style=for-the-badge&labelColor=000000)](#)
 
 </div>
 
 ---
 
-Owner of **[TechX Maestro](https://techxmaestro.com)** — Owen Sound's tech professional. IT management, custom development, infrastructure, security, and design for small businesses and homes that deserve real engineering.
+## 👋 What this is
 
-This profile is the portfolio. Everything public here runs in production against a full enterprise homelab — proof of the depth behind the service. The **HCC** (Homelab Command Center) product line below is the flagship: a unified operations platform for self-hosted infrastructure, built and hardened in-house.
+The **messy garage** of my operation.
 
-## Product line — HCC Ecosystem
+Day job lives at [**@techx-maestro**](https://github.com/techx-maestro) — that's where the polished, licensed product code ships. This profile is everything else: prototypes, weekend experiments, third-party mods, and whatever I'm currently obsessed with.
 
-| Project | Description |
-|---|---|
-| **[hcc-dashboard](https://github.com/xbc4000/hcc-dashboard)** | Twelve-page operations console unifying Pi-hole, Prometheus, RouterOS, Grafana, and Ollama behind one PWA-installable interface. |
-| **[hcc-spotify-bridge](https://github.com/xbc4000/hcc-spotify-bridge)** | Spotify Connect → HDMI-CEC bridge for high-end AV receivers. Supervised librespot with HTTP/WebSocket control API. |
-| **[homelab-network](https://github.com/xbc4000/homelab-network)** | Reference implementation of a hardened MikroTik-based network: VLAN segmentation, CAPsMAN, Pi-hole + Unbound, WireGuard, full observability stack. |
-| **[xbc4000.github.io](https://github.com/xbc4000/xbc4000.github.io)** | HCC Startpage — widget-driven browser homepage with live homelab telemetry. |
-| **Serina** | Private AI operations agent. Local LLM, persistent memory, voice synthesis, watchdog alerts, auto-remediation, tray integration. |
-| **HCC Android** | Native Kotlin/Compose companion app. Biometric-gated, cert-pinned, offline-aware. |
-| **VoxLounge** | Multi-user video chat platform. LiveKit SFU + Node.js + PostgreSQL. Private beta. |
+---
 
-## Expertise
+## 🎧 The bragging rights rack
+
+Everything I build in software gets tested against a stupidly-good listening room:
 
 ```
-backend       │  Node.js · Python · Express · FastAPI · WebSocket · PostgreSQL · Redis · SQLite
-frontend      │  TypeScript · Vanilla JS · PWA · Service Workers · Canvas · WebGL · GridStack
-mobile        │  Kotlin · Jetpack Compose · Hilt · Room · WorkManager · Retrofit · CertificatePinner
-infra         │  Docker · Docker Compose · Portainer · systemd · Caddy · nginx · MikroTik RouterOS
-observability │  Prometheus · Grafana · Loki · Alertmanager · Telegraf · InfluxDB · node-exporter
-ai            │  Ollama · Qwen · DeepSeek · Kokoro TTS · Whisper STT · RAG · embeddings · tool use
-platforms     │  Fedora · Ubuntu · Debian · RPM packaging · KDE Plasma · PAM integration
+speakers  │  Paradigm Monitor 7 towers  +  ADP v.3 surrounds & heights
+          │  × 2  Paradigm PS-1000 subs (stereo pair)
+receiver  │  NAD T748 v2  ·  flat EQ  ·  bit-perfect sources only
+control   │  custom RS-232 + IR bridge I wrote to replace the broken ZR 7 remote
+          │  (open-sourced — see hcc-nad-rs232 on the org)
 ```
 
-## Production infrastructure
+If it sounds bad here, it sounds bad everywhere.
 
-Enterprise-grade lab used for development, deployment, and operations:
+---
+
+## 🛰 The homelab
+
+A full-on datacenter-in-a-closet that doubles as the test rig for everything I ship:
 
 ```
-network    │  MikroTik RB3011UiAS · RouterOS 7.22 · 6 VLANs · CAPsMAN · Pi-hole + Unbound · WireGuard
-compute    │  Dell PowerEdge R730XD — Dual Xeon E5-2690 v4 (56 threads) · 128 GB ECC · NVIDIA GTX 1070
-           │  Dell PowerEdge R630 — Ubuntu Server · AMP game panel · VoxLounge deployment
-monitoring │  Raspberry Pi 4 · 14-container Docker stack · Prometheus · Grafana · Loki · Portainer
+network    │  MikroTik RB3011  ·  RouterOS 7.22  ·  6 VLANs  ·  Pi-hole  ·  WireGuard
+compute    │  Dell PER730XD  —  56-thread Xeon  ·  128 GB ECC  ·  GTX 1070
+           │  Dell PER630    —  AMP game panel  ·  Serina's always-on host
+edge       │  Pi 4 on VLAN 40  ·  14 containers of observability + bridges
 ```
 
-Every project in this profile runs in this environment, twenty-four hours a day.
+Full config + Grafana dashboards in [homelab-network](https://github.com/techx-maestro/homelab-network).
 
-## Engineering principles
+---
 
-- **Information density over whitespace** — dashboards show what's actually happening
-- **Direct over abstracted** — the right amount of code, no speculative scaffolding
-- **Production-first** — if it's in a repo, it's running somewhere
-- **Operational clarity** — telemetry, alerting, and recovery are first-class features, not afterthoughts
+## 🤖 Meet Serina
 
-## Contact
+My on-host AI assistant. British. Sarcastic. Has a pet frog named **Nigel**. Runs Qwen 7B on Ollama, remembers everything, and knows the homelab better than most humans do. No cloud, no telemetry, LAN-only.
 
-Serving Owen Sound and surrounding area — on-site, remote, and hybrid. Also open to remote client work globally for web, mobile, and infrastructure projects.
+She lives in my tray, on my phone, and (eventually, once a better GPU lands) **inside a Minecraft server**, because why not.
 
-- 🌐 **[techxmaestro.com](https://techxmaestro.com)** — services, pricing, contact
-- 📍 Owen Sound, ON · Canada
-- 💼 IT Management · Development · Design · Security · Training · Consulting
-- 🏠 Custom homes, smart integration, private hosting, and backup
+---
 
-Get in touch through [techxmaestro.com](https://techxmaestro.com) for a quote.
+## 🧪 Currently tinkering
+
+- **HCC Control** — a PySide6 desktop app that merges the dashboard, Serina, and the NAD remote into one window
+- **TechX OS** — Fedora bootc distro packaging the whole HCC stack as an immutable image
+- **OLED visualizer** — Pi Zero next to the AVR running Nigel + FFT bars + live NAD state, because a cyberpunk rack needs cyberpunk blinkenlights
+
+---
+
+## 🎨 Design language
+
+70% cyan · 15% violet · one warm magenta focal point · no green, no orange unless it's earned · dark mode or bust.
+
+If my dashboards don't look like a cyan LED strip glued to a black desk, I rejected them.
+
+---
+
+## 💼 The actual day job
+
+I run **[TechX Maestro](https://techxmaestro.com)** — tech services in Owen Sound, ON. IT management, custom development, smart-home integration, security, hosting. Full in-house, 24/7.
+
+Open to remote work globally for web / mobile / infra projects too.
+
+---
+
+## 🔧 Stack
+
+```
+backend       │  Node.js · Python · Express · FastAPI · WebSocket · Postgres · Redis · SQLite
+frontend      │  TypeScript · vanilla JS · PWA · Service Workers · Canvas · WebGL · GridStack
+mobile        │  Kotlin · Jetpack Compose · Hilt · Room · Retrofit · Wear OS
+infra         │  Docker · Portainer · systemd · Caddy · MikroTik RouterOS · Fedora / Ubuntu / Debian
+observability │  Prometheus · Grafana · Loki · Telegraf · InfluxDB
+ai            │  Ollama · Qwen · DeepSeek · Kokoro TTS · Whisper STT · RAG · tool use
+```
 
 ---
 
 <div align="center">
 
-![xbc4000's GitHub stats](https://github-readme-stats.vercel.app/api?username=xbc4000&show_icons=true&theme=tokyonight&bg_color=000000&title_color=00d4ff&icon_color=FF00B2&text_color=99aad0&border_color=162242&hide_border=false)
-![xbc4000's top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=xbc4000&layout=compact&theme=tokyonight&bg_color=000000&title_color=00d4ff&text_color=99aad0&border_color=162242&hide_border=false)
+![xbc4000's GitHub stats](https://github-readme-stats.vercel.app/api?username=xbc4000&show_icons=true&theme=tokyonight&bg_color=000000&title_color=00B7FF&icon_color=FF00B2&text_color=99aad0&border_color=162242&hide_border=false)
+![xbc4000's top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=xbc4000&layout=compact&theme=tokyonight&bg_color=000000&title_color=00B7FF&text_color=99aad0&border_color=162242&hide_border=false)
+
+<sub>Off-duty: cyberpunk vibes · home theater · homelab refactors · Minecraft (once the GPU upgrade lands)</sub>
 
 </div>
